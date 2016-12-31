@@ -1,0 +1,18 @@
+
+name: towerOfHanoi
+
+dependencies:
+  - base
+
+library:
+  exposed-modules: TowerOfHanoi
+  source-dirs: src
+  dependencies:
+
+tests:
+  test:
+    main: TowerOfHanoiSpec.hs
+    source-dirs: test
+    dependencies:
+      - towerOfHanoi
+      - hspec
